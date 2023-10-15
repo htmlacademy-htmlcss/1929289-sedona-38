@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+
+  background-color: #f2f2f2;
+}
+
+/*Pages*/
+.navigation-link {
+  color: inherit;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+.navigation-link.button {
+  color:rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: rgba(117, 97, 87, 1);
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.background-sedona{
+  color:rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-index, .main-inner {
+  background-color: #ffffff;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantage-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.main-index, .main-inner {
+  background-color: #ffffff;
+}
+
+.advanteges-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantage {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantage-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.button.button-search {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  background-color: rgba(117, 97, 87, 1);
+  padding: 8px 50px;
+  border-radius: 4px;
+  width: 276px;
+  height: 36px;
+  text-decoration: none;
+}
+
+.newsletter {
+  background-image: url("../images/Subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 415px;
+}
+
+.hotel-card-fav {
+  border-radius: 4px;
+background: var(--buttons-second, #82B3D3);
+
+
+}
+
+.hotel-card-like  {
+  border-radius: 4px;
+  background: var(--buttons-select, #7DB54F);
+
+
+}
