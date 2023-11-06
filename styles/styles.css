@@ -31,8 +31,8 @@ body {
   height: 100%;
   font-family: "PT Sans", sans-serif;
   color: #333333;
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 25px;
+  line-height: 25px;
   background-color: #f2f2f2;
 }
 
@@ -504,10 +504,6 @@ body {
   left: 0;
 }
 
-.pagination-item {
-  border-radius: 4px;
-
-}
 
 .pagination-link {
   display: flex;
@@ -523,6 +519,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .pagination-link:not(.pagination-link-current):hover,
@@ -607,6 +604,9 @@ body {
   padding: 14px 14px;
   border: 2px solid #E5E5E5;
 }
+.sort-link-dark {
+  border: 2px solid #000000;
+}
 
 .sort-link:hover {
   border: 2px solid #000000;
@@ -668,7 +668,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   background: url("../images/plush.svg") no-repeat 93% 57%;
-  background-size: 12px 7px;
 }
 
 .sorting:hover {
@@ -872,7 +871,6 @@ body {
 }
 
 .filter-catalog-list {
-
   margin: 0;
   padding: 0;
 }
@@ -890,7 +888,19 @@ body {
   margin-bottom: 16px;
 }
 
-
+.text-input-left {
+  border-radius: 4px 0 0 4px;
+  width: 143px;
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: background-color 0.3s;
+}
 
 .text-input {
   width: 143px;
@@ -1007,7 +1017,7 @@ body {
   background: #3F5E72;
 }
 
-.filter-input-container:checked ~ .checkmark::after {
+.filter-input-container input:checked ~ .checkmark::after {
   display: block;
 }
 
@@ -1049,7 +1059,7 @@ body {
   transform: rotate(306deg);
 }
 
-.filter-checkbox-container:checked ~ .checkboxmark::after {
+.filter-checkbox-container input:checked ~ .checkboxmark::after {
   display: block;
 }
 
@@ -1097,11 +1107,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
   display: flex;
   width: 100%;
   height: 100%;
-
   background-color: rgba(242, 242, 242, 0.8);
 }
 
@@ -1110,7 +1118,6 @@ body {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1125,10 +1132,8 @@ body {
   padding: 0;
   top: 64px;
   right: 52px;
-
   width: 52px;
   height: 52px;
-
   background-color: #f2f2f2;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
@@ -1161,11 +1166,23 @@ body {
   margin-bottom: 23px;
 }
 
+.field {
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
+}
+
 .field-date .field {
   box-sizing: border-box;
   width: 440px;
   margin-bottom: 4px;
-
+  background-color: #f2f2f2;
   border-radius: 4px;
 }
 
@@ -1179,14 +1196,11 @@ body {
 
 .modal-search-form .field-date::before {
   content: "";
-
   position: absolute;
   top: 16px;
   right: 20px;
-
   width: 16px;
   height: 15px;
-
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-size: 16px 15px;
@@ -1206,7 +1220,6 @@ body {
   margin: 0;
   margin-left: 137px;
   padding: 0 20px;
-
   font-size: 16px;
 }
 
@@ -1228,7 +1241,6 @@ body {
   width: 31px;
   padding-left: 9px;
   padding-right: 9px;
-
   border-radius: 0;
   appearance: none;
 }
@@ -1243,14 +1255,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 20px;
   min-height: 20px;
   padding: 0;
-
   border: none;
   background-color: transparent;
-
   cursor: pointer;
 }
 
@@ -1258,10 +1267,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 40px;
   min-height: 48px;
-
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
@@ -1296,7 +1303,6 @@ body {
   height: 26px;
   padding: 0;
   margin: 0;
-
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -1308,7 +1314,6 @@ body {
 
 .tooltip {
   position: absolute;
-
   width: 26px;
   height: 26px;
 }
@@ -1317,21 +1322,17 @@ body {
   position: absolute;
   top: 100%;
   margin-top: 15px;
-
   box-sizing: border-box;
   padding: 15px 18px 18px 22px;
   display: none;
   width: 256px;
-
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
   color: #ffffff;
-
   border-radius: 10px;
   background-color: #333333;
-
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1361,9 +1362,7 @@ body {
   margin-top: 25px;
   padding-top: 18px;
   padding-bottom: 18px;
-
   font-size: 20px;
   line-height: 24px;
-
   border-radius: 10px;
 }
