@@ -157,6 +157,7 @@ body {
 }
 
 .subscribe {
+  background-color: #3f5e72;
   background: url("../images/seerinevas.jpg") no-repeat;
   background-size: cover;
   width: 1200px;
