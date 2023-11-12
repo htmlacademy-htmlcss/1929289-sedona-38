@@ -111,7 +111,7 @@ body {
 
 .advantage-icon {
   width: 75px;
-  height: 72px;
+  height: 78px;
 }
 
 .navigation-list {
@@ -157,7 +157,7 @@ body {
 }
 
 .subscribe {
-  background: url("../images/Seerinevas.jpg") no-repeat;
+  background: url("../images/seerinevas.jpg") no-repeat;
   background-size: cover;
   width: 1200px;
   padding: 96px 258px 104px;
@@ -187,7 +187,7 @@ body {
 .inner-background {
   background-color: #000000;
   color: #ffffff;
-  background: url("../images/Subscribecatalog.jpg") no-repeat;
+  background: url("../images/subscribecatalog.jpg") no-repeat;
 }
 
 .subscribe-none {
@@ -497,7 +497,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 400px;
   gap: 8px;
 }
 
@@ -551,6 +550,8 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 5px 194px;
+  width: 720px;
 }
 
 .footer-telephone:hover,
@@ -597,9 +598,10 @@ body {
 
 .sort-list {
   display: flex;
-  width: 160px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 0;
+  margin-left: 70px;
   padding: 0;
 }
 
@@ -894,6 +896,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .filter-catalog-list .filter-catalog-item:not(:last-child) {
@@ -944,6 +947,7 @@ body {
 .filter-catalog-price {
   position: relative;
   margin-bottom: 0;
+  width: 143px;
 }
 
 .text-label {
@@ -1375,4 +1379,21 @@ body {
   line-height: 24px;
   border-radius: 10px;
   background-color: #68a2ca;
+}
+
+.button-disabled {
+  background-color: #e5e5e5;
+}
+
+.button-disabled:focus,
+.button-disabled:hover,
+input:disabled {
+  background-color: #e5e5e5;
+  outline: none;
+  cursor: default;
+}
+
+.sorting:disabled {
+  border: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
