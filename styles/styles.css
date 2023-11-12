@@ -189,7 +189,42 @@ body {
   background-color: #000000;
   color: #ffffff;
   background: url("../images/subscribecatalog.jpg") no-repeat;
+  background-size: cover;
 }
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.toggle-min {
+  left: 0;
+  top: -8px;
+}
+
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-max {
+  right: 0;
+  top: -8px;
+}
+
 
 .subscribe-none {
   background-image: none;
@@ -1257,6 +1292,7 @@ body {
   padding-right: 9px;
   border-radius: 0;
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .search-option .field::-webkit-outer-spin-button,
