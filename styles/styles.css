@@ -612,20 +612,20 @@ body {
   border: 2px solid #e5e5e5;
 }
 .sort-link-dark {
-  border: 2px solid#000000;
+  border: 2px solid #000000;
 }
 
 .sort-link:hover {
-  border: 2px solid#000000;
+  border: 2px solid #000000;
 }
 
 .sort-link:focus {
-  border: 2px solid#68a2ca;
+  border: 2px solid #68a2ca;
   outline: none;
 }
 
 .sort-link:active {
-  border: 2px solid#000000;
+  border: 2px solid #000000;
 }
 
 .catalog-container {
@@ -901,8 +901,8 @@ body {
 }
 
 .text-input-left {
+  width: 100%;
   border-radius: 4px 0 0 4px;
-  width: 143px;
   display: inline-block;
   padding: 12px 20px;
   border: none;
@@ -970,9 +970,6 @@ body {
   fill: rgba(104, 162, 202, 0.302);
 }
 
-.footer-telephone-image {
-  fill: blue;
-}
 
 .footer-telephone-image:hover {
   fill: #756157;
@@ -1377,5 +1374,5 @@ body {
   font-size: 20px;
   line-height: 24px;
   border-radius: 10px;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
