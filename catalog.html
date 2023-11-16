@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type=" image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -15,7 +15,7 @@
       <header data-test="header" class="header">
         <nav class="header-navigation">
           <a href="index.html" class="header-logo">
-            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -30,13 +30,13 @@
           </ul>
           <ul class="user-list">
             <li class="user-item">
-              <a class="user-link user-link-Vector" href="#">
-                <img src="images/vector.svg" width="18" height="18" alt="Поиск.">
+              <a class="user-link user-link-vector" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="user-item">
               <a class="user-link user-link-laike" href="#">
-                <img src="images/laike.svg" width="18" height="18" alt="Избранное.">
+                <span class="visually-hidden">Избранное</span>
                 <span class="navigation-number">12</span>
               </a>
             </li>
@@ -52,8 +52,8 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
-                  <img src="images/icon/vecto5r.svg" width="12" height="12" alt="Главная.">
+                <a class="breadcrumbs-link breadcrumbs-link-hous  breadcrumbs-link-main" href="index.html">
+                  <span class="visually-hidden">Главная</span>
                 </a>
               </li>
               <li class=" breadcrumbs-item">
@@ -71,19 +71,19 @@
                     <li class="filter-catalog-item">
                       <label class="filter-checkbox-container">Бассейн
                         <input type="checkbox" name="pool" checked>
-                        <span class="checkboxmark"></span>
+                        <span class="checkboxmark" tabindex="0"></span>
                       </label>
                     </li>
                     <li class="filter-catalog-item">
                       <label class="filter-checkbox-container">Парковка
                         <input type="checkbox" name="parking" checked>
-                        <span class="checkboxmark"></span>
+                        <span class="checkboxmark" tabindex="0"></span>
                       </label>
                     </li>
                     <li class="filter-catalog-item">
                       <label class="filter-checkbox-container">WI-FI
                         <input type="checkbox" name="WI-FI">
-                        <span class="checkboxmark"></span>
+                        <span class="checkboxmark" tabindex="0"></span>
                       </label>
                     </li>
                   </ul>
@@ -94,19 +94,19 @@
                     <li class="filter-catalog-item">
                       <label class="filter-input-container">Гостиница
                         <input type="radio" name="residence" value="hotel" checked>
-                        <span class="checkmark"></span>
+                        <span class="checkmark" tabindex="0"></span>
                       </label>
                     </li>
                     <li class="filter-catalog-item">
                       <label class="filter-input-container">Мотель
                         <input type="radio" name="residence" value="motel">
-                        <span class="checkmark"></span>
+                        <span class="checkmark" tabindex="0"></span>
                       </label>
                     </li>
                     <li class="filter-catalog-item">
                       <label class="filter-input-container">Апартаменты
                         <input type="radio" name="residence" value="apartments">
-                        <span class="checkmark"></span>
+                        <span class="checkmark" tabindex="0"></span>
                       </label>
                     </li>
                   </ul>
@@ -126,10 +126,10 @@
                   <div class="range">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 226px">
-                        <button class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button">
                           <span class="visually-hidden">Изменить максимальную цену</span>
                         </button>
                       </div>
@@ -271,7 +271,7 @@
           <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
           <p class="text subscribe-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+            <input class="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
             <button class="button button-subscribe">Подписаться</button>
           </form>
         </section>

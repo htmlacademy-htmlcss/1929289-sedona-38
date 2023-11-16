@@ -40,14 +40,23 @@ body {
   flex-grow: 1;
 }
 
+.user-link-vector {
+  background-image: url(../images/vector.svg);
+}
+
 .user-link {
-  min-width: 18px;
-  min-height: 18px;
+  min-width: 44px;
+  min-height: 64px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
   display: inline-block;
   padding: 22px 15px;
 }
 
-.header-navigation, .footer-container {
+
+.header-navigation,
+.footer-container {
   display: flex;
   width: 1060px;
   margin: 0 auto;
@@ -82,7 +91,8 @@ body {
 
 }
 
-.header, .footer {
+.header,
+.footer {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -240,7 +250,8 @@ body {
   text-decoration: none;
 }
 
-.navigation-link:focus, .user-link:focus {
+.navigation-link:focus,
+.user-link:focus {
   outline: 2px solid #68a2ca;
 }
 
@@ -417,7 +428,6 @@ body {
 }
 
 .breadcrumbs-item {
-
   display: inline-block;
 }
 
@@ -630,6 +640,7 @@ body {
 
 .user-link-laike {
   position: relative;
+  background-image: url("../images/laike.svg");
 }
 
 .sort-list {
@@ -639,6 +650,7 @@ body {
   margin: 0;
   margin-left: 70px;
   padding: 0;
+  min-width: 160px;
 }
 
 .sort-link {
@@ -649,6 +661,7 @@ body {
   padding: 16px 14px;
   border: 2px solid #e5e5e5;
 }
+
 .sort-link-dark {
   border: 2px solid #000000;
 }
@@ -702,13 +715,13 @@ body {
 .sorting {
   font-family: inherit;
   position: relative;
-  width: 292px;
+  min-width: 292px;
   height: 49px;
   padding: 11px 18px;
   border-radius: 4px;
   appearance: none;
   border: 2px solid #e5e5e5;
-  margin-right: 70px;
+  margin-right: 0px;
   color: #333333;
   font-size: 18px;
   line-height: 21px;
@@ -882,7 +895,16 @@ body {
   margin-right: auto;
 }
 
+.breadcrumbs-link-hous{
+  background-image: url(../images/icon/vecto5r.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: center;
+}
+
 .breadcrumbs-link {
+  width: 12px;
+  height: 12px;
   display: inline-block;
   color: inherit;
   font-size: 16px;
@@ -1389,14 +1411,14 @@ body {
 }
 
 .tooltip-text:after {
-  content:'';
+  content: '';
   background-image: url("../images/triangle.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
